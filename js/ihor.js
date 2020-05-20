@@ -4,7 +4,7 @@ function addTwoNumbers(x, y) {
 }
 
 document.write('<h1>');
-document.write( 'Result: 5 + 2 = ' + addTwoNumbers(5, 2));
+document.write('Result: 5 + 2 = ' + addTwoNumbers(5, 2));
 document.write('</h1>');
 
 
@@ -19,11 +19,11 @@ addEventListener('write', function () {
 });
 
 for (let counter = 1; counter <= 20; counter = counter + 1) {
-(function (counter) {
-  setTimeout(function() {
-    document.write(counter + '<br>');
-  }, 1000);
-})(counter)
+  (function (counter) {
+    setTimeout(function () {
+      document.write(counter + '<br>');
+    }, 1000);
+  })(counter)
 }
 
 
