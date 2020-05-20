@@ -19,5 +19,11 @@ addEventListener('write', function () {
 });
 
 for (let counter = 1; counter <= 20; counter = counter + 1) {
-  document.write(counter + '<br>');
+(function (counter) {
+  setTimeout(function() {
+    document.write(counter + '<br>');
+  }, 1000);
+})(counter)
 }
+
+
