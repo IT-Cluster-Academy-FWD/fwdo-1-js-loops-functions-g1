@@ -15,5 +15,9 @@ function addEventListener(firstWord, secondWord) {
 }
 
 addEventListener('write', function () {
-  document.write('Hello World!');
+  document.write('Hello World!' + '<br>');
 });
+
+for (let counter = 1; counter <= 20; counter = counter + 1) {
+  document.write(counter + '<br>');
+}
