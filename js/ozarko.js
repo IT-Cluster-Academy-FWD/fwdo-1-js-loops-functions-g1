@@ -1,6 +1,30 @@
-document.write('<h2>We have ' + animals.length + ' animals. And we are happy </h2>');
 
-for (let i = 0; i < animals.length; i++) {
-  let animal = animals[i];
-  document.write('We have an animal: ' + animal.type + '. Its name: ' + animal.name + '. it lives with us ' + animal.age + ' years.' + '<br>');
+function addTwoNumbers(firstNumber, secondNumber) {
+  return firstNumber + secondNumber;
 }
+
+let result = addTwoNumbers(2, 19);
+
+document.write('<h1> 2 + 19 = ' + result + '</h2>');
+
+function addEventListener (callBack) {
+  callBack();
+}
+
+addEventListener (function() {
+  document.write('<h2>Hello Nazar</h2>');
+});
+
+for (var i = 0; i < 20; i++ ) {
+  setTimeout(function(){
+    console.log(i);
+  }, 1000);
+}
+
+
+
+
+
+
+
+
