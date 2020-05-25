@@ -35,7 +35,7 @@ for (var i = 1; i < 21; i++) {
   })(i);
 }*/
 
-// FizzBuzz
+/* FizzBuzz
 document.write('<h2>FizzBuzz Program</h2>');
 
 function FizzBuzz(firstNumber,lastNumber) {
@@ -52,4 +52,24 @@ function FizzBuzz(firstNumber,lastNumber) {
  }
 }
  
-FizzBuzz(1, 100);
+FizzBuzz(1, 100); */
+
+//The smallest number in array
+document.write('<h2>Find the smalest number in array</h2>');
+function theSmallestNumber(numbers) {
+  if (numbers.length === 0) {
+    document.write('null');
+  } else {
+    minNumber=numbers[0];
+  for (let number = 1; number < numbers.length; number++) {
+    if (numbers[number] < minNumber) {
+      minNumber = numbers[number];
+    } 
+  }
+  document.write(`<h3>Array: </h3>${test}<h3>The smalest number in this array is </h3>`);
+  document.write(minNumber);
+  }
+}
+
+const test = [23, 5, 8, 26, 89, 6, 58, 4, 56];
+theSmallestNumber(test); 
