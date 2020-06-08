@@ -61,15 +61,16 @@ function theSmallestNumber(numbers) {
     document.write('null');
   } else {
     minNumber=numbers[0];
-  for (let number = 1; number < numbers.length; number++) {
-    if (numbers[number] < minNumber) {
-      minNumber = numbers[number];
-    } 
-  }
-  document.write(`<h3>Array: </h3>${test}<h3>The smalest number in this array is </h3>`);
-  document.write(minNumber);
+    for (let number = 1; number < numbers.length; number++) {
+      if (numbers[number] < minNumber) {
+       minNumber = numbers[number];
+      }
+    }
+    return minNumber;
   }
 }
 
 const test = [23, 5, 8, 26, 89, 6, 58, 4, 56];
 theSmallestNumber(test); 
+console.log(test);
+console.log(minNumber);
